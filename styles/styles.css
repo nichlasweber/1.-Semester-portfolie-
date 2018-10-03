@@ -5,3 +5,69 @@ body {
 	font-family: 'roboto', sans-serif;
 }
 
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+/* CLASSIC STYLE */
+#navigation {
+	border-bottom: 1px solid #666;
+	padding-bottom: 0px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	float: right;
+}
+/* Jeg skriver #navigation li for at vise at det kun er LI-elemterne indenfor navigation som jeg vil berøre*/
+#navigation li {
+	list-style: none;
+	display: inline;
+	/* Grunden til jeg skriver inline er at det som default er et block-elemtn, men da jeg vil have dem på række ændrer jeg dem til et inline-element*/
+	
+
+}
+#navigation a {
+	margin: 0 15px 0px 15px;
+	font-family: arial, sans-serif; 
+	text-decoration: none;
+	color: #666;
+	border: 1px solid #666;
+	padding: 5px 20px; /* Rækkefølgen lyder: top, right, bottom, left, men jeg næjes med at skrive 2 værdier, som betyder at 5px bliver top og bund og 10px bliver højre og venstre*/
+	background: #ddd;
+	border-radius: 7px 7px 0 0;
+	display: inline-block; 
+	width: 100px;
+	text-align: center;
+	border-bottom: hidden; /* */
+}
+navigation a:hover {
+	background: #EBEBEB;
+}
+#navigation a:first-of-type {
+	margin-left: 0;
+}
+
+/* FLEXBOX-STYLE */
+
+nav {
+	display: flex; 
+	height: 70px;
+	align-items: center;
+	width: 100%;
+	
+		
+}
+nav a {
+	width: 25%;
+	background: #ddd;
+	text-align: center;
+	text-decoration: none;
+	color: #444;
+	padding: 20px;
+	font-family: helvetica, sans-serif;
+	
+}
+nav a:hover {
+	background: #D3CB94;
+}

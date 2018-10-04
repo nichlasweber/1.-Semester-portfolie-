@@ -24,7 +24,7 @@ body {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	text-align: center;
-	color: aqua
+	color: white
 }
 
 .main-nav li:hover{
@@ -32,7 +32,7 @@ body {
 }
 .main-nav li a {
 	display:block;
-	color: #FFFFF;
+	color: #FEFEFE;
 	text-decoration: none;
 	padding: 5px 20px;
 	font-family: "roboto", sans-serif;
@@ -59,7 +59,7 @@ h1{
 }
 
 #logo {
-	margin: 10px auto 0 auto; position: left; width: 183px;
+	margin-left: auto 0 auto; position: relative; width: 183px;
 }
 
 *{

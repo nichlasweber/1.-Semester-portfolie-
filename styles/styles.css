@@ -4,70 +4,68 @@
 body {
 	font-family: 'roboto', sans-serif;
 }
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+
+body {
+	background: #f2f0eb url(images/bg.png);
+	font: 16px Helvetica, Arial, Sans-Serif; color: #636363; line-height: 24px;
+}
+.main-nav{
+	list-style-type: none; /*fjerner bulletpointsne i listen*/
+	background-color: #87C680; /* farver laver navigations barens baggrund. */
+}
+.main-nav li {
+	display: inline-block; /*sætter dem på en lige linje*/
+	margin: 25px;
+	justify-content: space-around;
+	padding: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: aqua
+}
+
+.main-nav li:hover{
+	background-color: #A4D898; 
+}
+.main-nav li a {
+	display:block;
+	color: #FFFFF;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "roboto", sans-serif;
+	font-size: 15px;
+}
+#navigation{
+	align-content: space-around;
+}
+#navigation a {
+	padding: 10px 15px;
+	align-content: space-around;
+}
+#navigation a:hover {
+	background-color: #329D7F;
+	border: 1px solid white;
+}
+h1{
+	margin: 20px;
+}
+
+#container {
+	width: 960px; margin: 0 auto;
+}
+
+#logo {
+	margin: 10px auto 0 auto; position: relative; width: 183px;
+}
 
 *{
 	margin: 0;
 	padding: 0;
 	border: none;
-}
-
-/* CLASSIC STYLE */
-#navigation {
-	border-bottom: 1px solid #666;
-	padding-bottom: 0px;
-	margin-top: 40px;
-	margin-bottom: 50px;
-	float: right;
-}
-/* Jeg skriver #navigation li for at vise at det kun er LI-elemterne indenfor navigation som jeg vil berøre*/
-#navigation li {
-	list-style: none;
-	display: inline;
-	/* Grunden til jeg skriver inline er at det som default er et block-elemtn, men da jeg vil have dem på række ændrer jeg dem til et inline-element*/
 	
-
-}
-#navigation a {
-	margin: 0 15px 0px 15px;
-	font-family: arial, sans-serif; 
-	text-decoration: none;
-	color: #666;
-	border: 1px solid #666;
-	padding: 5px 20px; /* Rækkefølgen lyder: top, right, bottom, left, men jeg næjes med at skrive 2 værdier, som betyder at 5px bliver top og bund og 10px bliver højre og venstre*/
-	background: #ddd;
-	border-radius: 7px 7px 0 0;
-	display: inline-block; 
-	width: 100px;
-	text-align: center;
-	border-bottom: hidden; /* */
-}
-navigation a:hover {
-	background: #EBEBEB;
-}
-#navigation a:first-of-type {
-	margin-left: 0;
-}
-
-/* FLEXBOX-STYLE */
-
-nav {
-	display: flex; 
-	height: 70px;
-	align-items: center;
-	width: 100%;
-	
-		
-}
-nav a {
-	width: 25%;
-	background: #ddd;
-	text-align: center;
-	text-decoration: none;
-	color: #444;
-	padding: 20px;
-	font-family: helvetica, sans-serif;
 	
 }
-nav a:hover {
-	background: #D3CB94;
-}
+

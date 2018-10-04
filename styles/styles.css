@@ -14,7 +14,7 @@ body {
 }
 .main-nav{
 	list-style-type: none; /*fjerner bulletpointsne i listen*/
-	background-color: #87C680; /* farver laver navigations barens baggrund. */
+	background-color: #D0D098; /* farver laver navigations barens baggrund. */
 }
 .main-nav li {
 	display: inline-block; /*sætter dem på en lige linje*/
@@ -28,7 +28,7 @@ body {
 }
 
 .main-nav li:hover{
-	background-color: #A4D898; 
+	background-color: #BCBF77; 
 }
 .main-nav li a {
 	display:block;
